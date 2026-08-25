@@ -72,3 +72,12 @@ vim.keymap.set("n", "ü", "/", {
 vim.keymap.set("n", "Ü", "?", {
   desc = "Search backward",
 })
+
+-- Brace text objects
+vim.keymap.set({ "x", "o" }, "iö", "i{", {
+  desc = "Inside braces",
+})
+
+vim.keymap.set({ "x", "o" }, "aö", "a{", {
+  desc = "Around braces",
+})
